@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>XtremeFun</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          src="./assets/Logo.png"
+          alt="XtremeFun Logo"
+          class="header__logo__image"
+        />
+      </div>
+      <nav class="nav">
+        <div class="nav__container active">
+          <a class="nav__link" href="./index.html">Inicio</a>
+        </div>
+        <div class="nav__container menu">
+          <a class="nav__link" href="./actividades.html">Actividades</a>
+          <span> ▼ </span>
+          <div class="nav__menu">
+            <div class="nav__menu__item">
+              <a class="nav__link" href="./actividades#agua.html">Acuáticas</a>
+            </div>
+            <div class="nav__menu__item">
+              <a class="nav__link" href="./actividades#aire.html">Aéreas</a>
+            </div>
+            <div class="nav__menu__item">
+              <a class="nav__link" href="./actividades#rutas.html">Rutas</a>
+            </div>
+            <div class="nav__menu__item">
+              <a class="nav__link" href="./actividades#otras.html"
+                >Otras actividades</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="nav__container">
+          <a class="nav__link" href="./reserva.html">Reserva</a>
+        </div>
+        <div class="nav__container">
+          <a class="nav__link" href="./galeria.html">Galería</a>
+        </div>
+        <div class="nav__container">
+          <a class="nav__link" href="./opiniones.html">Opiniones</a>
+        </div>
+        <div class="nav__container">
+          <a class="nav__link" href="./contacto.html">Contacto</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="galeria">
+        <button class="galeria__button"><a>¡Reserva tu aventura! </a></button>
+      </div>
+      <div class="perks">
+        <div class="perks__row">
+          <div class="perks__row__item">
+            <div class="perks__image">
+              <img src="./assets/svg/leaf-outline.svg" />
+            </div>
+            <div class="perks__container">
+              <h3>¡Respira!</h3>
+              <p>
+                Todas nuestras actividades se realizan en plena naturaleza, para
+                que puedas disfrutar del aire limpo
+              </p>
+            </div>
+          </div>
+          <div class="perks__row__item">
+            <div class="perks__image">
+              <img src="./assets/svg/footsteps-outline.svg" />
+            </div>
+            <div class="perks__container">
+              <h3>Lorem ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, eveniet nemo vel numquam porro soluta quos suscipit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="perks__row">
+          <div class="perks__row__item">
+            <div class="perks__image">
+              <img src="./assets/svg/paw-outline.svg" />
+            </div>
+            <div class="perks__container">
+              <h3>Lorem ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, eveniet nemo vel numquam porro soluta quos suscipit.
+              </p>
+            </div>
+          </div>
+          <div class="perks__row__item">
+            <div class="perks__image">
+              <img src="./assets/svg/lock-closed-outline.svg" />
+            </div>
+            <div class="perks__container">
+              <h3>Lorem ipsum</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae, eveniet nemo vel numquam porro soluta quos suscipit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>

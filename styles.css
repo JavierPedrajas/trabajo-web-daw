@@ -1,0 +1,213 @@
+:root {
+  --principal: #f8ba0f;
+  --complementario1: #f7941a;
+  --complementario2: #f66f25;
+  --secundario: #f54a30;
+  --oscuro: #231f20;
+  --contraste: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /*De esta forma, se puede relativizar que 1rem = 10px sin limitar la accesibilidad*/
+}
+
+a {
+  color: var(--contraste);
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: var(--oscuro);
+  color: var(--contraste);
+}
+
+.header {
+  height: 20vh;
+  min-height: 200px;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--oscuro);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 4px 4px 0 #00000025;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-top: 5rem;
+}
+
+.nav {
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.nav__container {
+  padding: 1rem 3rem;
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.nav__container:hover > a {
+  color: var(--complementario1);
+}
+
+.nav__container.active:hover > a {
+  color: var(--oscuro);
+}
+
+.nav__container.menu {
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+}
+
+.nav__container.menu a {
+  margin-right: 1rem;
+}
+
+.nav__container.menu:hover {
+  color: var(--complementario1);
+}
+
+.nav__container.menu:hover > .nav__menu {
+  display: block;
+
+  position: absolute;
+  margin-top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--principal);
+  width: 15rem;
+  border: 2px solid var(--complementario1);
+}
+
+.nav__menu {
+  display: none;
+}
+
+.nav__menu__item {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.nav__menu__item a {
+  color: var(--oscuro);
+}
+
+.nav__menu__item:not(:last-child) {
+  border-bottom: 2px solid var(--complementario1);
+}
+
+.nav__menu__item:hover {
+  background-color: var(--complementario1);
+}
+
+.nav__menu__item:hover a {
+  color: var(--contraste);
+}
+
+.active {
+  background-color: var(--principal);
+}
+
+.active > a {
+  color: var(--oscuro);
+  font-weight: 600;
+}
+
+.main {
+  height: 100%;
+  /* background-color: red; */
+}
+
+.galeria {
+  height: 80vh;
+  background-image: linear-gradient(#00000099, #00000099),
+    url("./assets/FotoPortada.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.galeria__button {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 10%);
+
+  font-size: 4rem;
+  padding: 2rem 4rem;
+  background-color: var(--principal);
+  border: 0px solid transparent;
+  cursor: pointer;
+}
+
+.galeria__button a {
+  color: var(--oscuro);
+}
+
+.galeria__button:hover {
+  transform: translate(-50%, 8%);
+}
+
+.perks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10rem 0 5rem;
+}
+
+.perks__row {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+
+.perks__row__item {
+  display: flex;
+  width: 25%;
+}
+
+.perks__container {
+  font-size: 2rem;
+  width: 40%;
+}
+
+.perks__container h3 {
+  font-size: 3rem;
+}
+
+.perks__image {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.perks__image img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #1a1718;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+}
