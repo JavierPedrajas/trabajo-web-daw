@@ -1,0 +1,55 @@
+.actividades {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subsection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.subsection-header {
+  font-size: 2.5rem;
+}
+
+.actividad {
+  display: flex;
+  /* margin: 2rem 0; */
+}
+
+.actividad__image {
+  margin: auto 2rem;
+  width: 40rem;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.actividad__image > img {
+  width: 40rem;
+  height: auto;
+}
+
+.actividad__texto {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.actividad__texto__titulo {
+  font-size: 2rem;
+}
+
+.actividad__texto__descripcion {
+  font-size: 1.5rem;
+}
+
+.actividad__texto__precio {
+  font-size: 3.5rem;
+  font-weight: 300;
+  align-self: flex-end;
+}

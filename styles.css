@@ -72,7 +72,11 @@ body {
 .nav__container.menu {
   position: relative;
   cursor: pointer;
-  height: 100%;
+  /* height: 100%; */
+}
+
+.nav__container.menu.active > span {
+  color: var(--oscuro);
 }
 
 .nav__container.menu a {
@@ -87,12 +91,12 @@ body {
   display: block;
 
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 3.4rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--principal);
-  width: 15rem;
-  border: 2px solid var(--complementario1);
+  width: 22rem;
+  border: 1px solid var(--complementario1);
 }
 
 .nav__menu {
@@ -101,7 +105,7 @@ body {
 
 .nav__menu__item {
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   cursor: pointer;
 }
 
@@ -239,4 +243,28 @@ body {
   font-size: 2rem;
   margin-right: 5px;
   vertical-align: middle;
+}
+
+.section-header {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 3rem;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--principal);
+}
+
+.divider.l {
+  width: 80%;
+}
+
+.divider.m {
+  width: 50%;
+}
+
+.divider.s {
+  width: 30%;
 }
