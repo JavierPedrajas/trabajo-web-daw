@@ -15,7 +15,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>XtremeFun</title>
+    <link rel="stylesheet" href="reserva.css" />
+
+    <title>Reserva</title>
   </head>
   <body>
     <header class="header">
@@ -27,7 +29,7 @@
         />
       </div>
       <nav class="nav">
-        <div class="nav__container active">
+        <div class="nav__container">
           <a class="nav__link" href="index.html">Inicio</a>
         </div>
         <div class="nav__container menu">
@@ -52,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="nav__container">
+        <div class="nav__container active">
           <a class="nav__link" href="reserva.html">Reserva</a>
         </div>
         <div class="nav__container">
@@ -67,61 +69,92 @@
       </nav>
     </header>
     <main class="main">
-      <div class="galeria">
-        <button class="galeria__button"><a href="reserva.html">¡Reserva tu aventura! </a></button>
-      </div>
-      <div class="perks">
-        <div class="perks__row">
-          <div class="perks__row__item">
-            <div class="perks__image">
-              <img src="./assets/svg/leaf-outline.svg" />
-            </div>
-            <div class="perks__container">
-              <h3>¡Respira!</h3>
-              <p>
-                Todas nuestras actividades se realizan en plena naturaleza, para
-                que puedas disfrutar del aire limpo
-              </p>
-            </div>
-          </div>
-          <div class="perks__row__item">
-            <div class="perks__image">
-              <img src="./assets/svg/footsteps-outline.svg" />
-            </div>
-            <div class="perks__container">
-              <h3>Lorem ipsum</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae, eveniet nemo vel numquam porro soluta quos suscipit.
-              </p>
-            </div>
-          </div>
+      <div class="reserva">
+        <div class="reserva__container">
+          <label class="reserva__container__label" for="nombre">Nombre</label>
+          <input class="reserva__container__input" type="text" id="nombre" />
         </div>
-        <div class="perks__row">
-          <div class="perks__row__item">
-            <div class="perks__image">
-              <img src="./assets/svg/paw-outline.svg" />
-            </div>
-            <div class="perks__container">
-              <h3>Lorem ipsum</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae, eveniet nemo vel numquam porro soluta quos suscipit.
-              </p>
-            </div>
-          </div>
-          <div class="perks__row__item">
-            <div class="perks__image">
-              <img src="./assets/svg/lock-closed-outline.svg" />
-            </div>
-            <div class="perks__container">
-              <h3>Lorem ipsum</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae, eveniet nemo vel numquam porro soluta quos suscipit.
-              </p>
-            </div>
-          </div>
+        <div class="reserva__container">
+          <label class="reserva__container__label" for="apellidos"
+            >Apellidos</label
+          >
+          <input class="reserva__container__input" type="text" id="apellidos" />
+        </div>
+        <div class="reserva__container">
+          <label class="reserva__container__label" for="email">Email</label>
+          <input class="reserva__container__input" type="email" id="email" />
+        </div>
+        <div class="reserva__container">
+          <label class="reserva__container__label" for="personas"
+            >Personas</label
+          >
+          <input
+            class="reserva__container__input"
+            type="number"
+            id="personas"
+          />
+        </div>
+        <div class="reserva__container">
+          <label class="reserva__container__label" for="fecha">Fecha</label>
+          <input class="reserva__container__input" type="date" id="fecha" />
+        </div>
+        <div class="reserva__container">
+          <label class="reserva__container__label" for="actividad"
+            >Actividad</label
+          >
+          <select id="actividad" class="reserva__container__input">
+            <option class="reserva__container__input__option">Rafting</option>
+            <option class="reserva__container__input__option">
+              Paddle Surf
+            </option>
+            <option class="reserva__container__input__option">
+              Piragüismo
+            </option>
+            <option class="reserva__container__input__option">Kite Surf</option>
+
+            <option class="reserva__container__input__option">
+              Paracaidismo
+            </option>
+            <option class="reserva__container__input__option">Ala Delta</option>
+            <option class="reserva__container__input__option">Parapente</option>
+            <option class="reserva__container__input__option">
+              Salto Base
+            </option>
+
+            <option class="reserva__container__input__option">
+              L'Albufera
+            </option>
+            <option class="reserva__container__input__option">
+              Acueducto Romano de Peña Cortada
+            </option>
+            <option class="reserva__container__input__option">
+              Sendero Cavanilles
+            </option>
+            <option class="reserva__container__input__option">
+              Puentes Colgantes de Chulilla
+            </option>
+
+            <option class="reserva__container__input__option">Paintball</option>
+            <option class="reserva__container__input__option">
+              Carrera de orientación
+            </option>
+            <option class="reserva__container__input__option">Escalada</option>
+          </select>
+          <!-- <input class="reserva__container__input" type="date" id="fecha" /> -->
+        </div>
+        <div class="reserva__container">
+          <label class="reserva__container__label" for="comentarios"
+            >Comentarios</label
+          >
+          <textarea
+            class="reserva__container__input"
+            type="text"
+            id="comentarios"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="reserva__container">
+          <div class="reserva__button">Reserva</div>
         </div>
       </div>
     </main>

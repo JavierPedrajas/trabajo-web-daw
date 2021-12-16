@@ -1,0 +1,42 @@
+.reserva {
+  margin-top: 5rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reserva__container {
+  width: 20%;
+
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  font-size: 3rem;
+}
+
+.reserva__container__label {
+  margin-right: 2rem;
+}
+.reserva__container__input {
+  width: 50%;
+  padding: 1rem 0.5rem;
+  /* margin-right: 2rem; */
+}
+
+.reserva__container__input:focus {
+  outline-color: var(--principal);
+}
+
+.reserva__button {
+  font-size: 4rem;
+  padding: 2rem 4rem;
+  background-color: var(--principal);
+  border: 0px solid transparent;
+  cursor: pointer;
+  color: var(--oscuro);
+
+  margin: auto;
+  margin-top: 2rem;
+}
