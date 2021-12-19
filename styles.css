@@ -270,15 +270,14 @@ body {
   width: 30%;
 }
 
-/* Páginas de contacto */
-.contacto {
+.section-comun {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contacto__container {
+.section-comun__container {
   width: 80%;
 
   display: flex;
