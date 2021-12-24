@@ -349,3 +349,13 @@ body {
   flex-direction: column;
 }
 
+.opiniones {
+    border: 1px solid white;
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
