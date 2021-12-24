@@ -68,10 +68,45 @@
         </div>
       </nav>
     </header>
-    <main class="section-comun">
+    <main class="formulario_contacto">
       <h2 class="section-header">Formulario de contacto</h2>
       <div class="divider l"></div>
-      <div class="section-comun__container">
+      <div class="formulario_contacto__container">
+            <label class="formulario_contacto__container__label">Nombre</label>
+            <input class="formulario_contacto__container__input" type="text" id="nombre" />
+      </div>
+      <div class="formulario_contacto__container">
+        <label class="formulario_contacto__container__label">Apellidos</label>
+        <input class="formulario_contacto__container__input" type="text" id="apellidos" />
+      </div>
+      <div class="formulario_contacto__container">
+       <label class="formulario_contacto__container__label">Dirección</label>
+      <input class="formulario_contacto__container__input" type="text" id="direccion" />
+      </div>
+            <select id="actividad" class="reserva__container__input">
+              <option class="reserva__container__input__option">Rafting</option>
+              <option class="reserva__container__input__option">
+                Paddle Surf
+              </option>
+           
+            </select>
+            <!-- <input class="reserva__container__input" type="date" id="fecha" /> -->
+          </div>
+          <div class="reserva__container">
+            <label class="reserva__container__label" for="comentarios"
+              >Comentarios</label
+            >
+            <textarea
+              class="reserva__container__input"
+              type="text"
+              id="comentarios"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="reserva__container">
+            <div class="reserva__button">Reserva</div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
