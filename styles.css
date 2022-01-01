@@ -294,7 +294,7 @@ body {
   margin-top: 0rem;
   display: flex;
   flex: 1;
-  flex-direction: ROW;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -303,15 +303,16 @@ body {
 
   display: flex;
   /* justify-content: flex-end; */
+  flex-direction: row;
   justify-content: space-between;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0rem;
   font-size: 3rem;
   align-items: left;
 }
 
 .formulario_contacto__container__label {
   width: 15rem ;
-  margin-right: 2rem;
+  margin-right: 2px;
   font-size: 2rem;
 }
 
@@ -357,5 +358,18 @@ body {
     margin-left: 2%;
     display: flex;
     flex-direction: row;
+    background-color: lightslategrey;
+}
+
+.formulario-button {
+    font-size: 4rem;
+    padding: 2rem 4rem;
+    background-color: var(--principal);
+    border: 0px solid transparent;
+    cursor: pointer;
+    color: var(--oscuro);
+  
+    margin: auto;
+    margin-top: 2rem;
 }
 
