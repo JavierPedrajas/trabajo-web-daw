@@ -311,7 +311,7 @@ body {
 }
 
 .formulario_contacto__container__label {
-  width: 15rem ;
+  width: 15rem;
   margin-right: 2px;
   font-size: 2rem;
 }
@@ -340,7 +340,7 @@ body {
 }
 
 .galeria-imagenes {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 25%;
   height: 300px;
   margin-right: 2%;
@@ -348,28 +348,48 @@ body {
   margin-left: 2%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.galeria-imagenes > img {
+  height: auto;
+  /* filter: blur(1px); */
+
+}
+
+.galeria-imagenes img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+.galeria-imagenes > p {
+  margin-bottom: 5px;
 }
 
 .opiniones {
-    border: 1px solid white;
-    width: 100%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    display: flex;
-    flex-direction: row;
-    background-color: lightslategrey;
+  border: 1px solid var(--complementario1);
+  width: 100%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  /* background-color: lightslategrey; */
+}
+
+.opiniones p{
+  margin-bottom: 0px;
 }
 
 .formulario-button {
-    font-size: 4rem;
-    padding: 2rem 4rem;
-    background-color: var(--principal);
-    border: 0px solid transparent;
-    cursor: pointer;
-    color: var(--oscuro);
-  
-    margin: auto;
-    margin-top: 2rem;
-}
+  font-size: 4rem;
+  padding: 2rem 4rem;
+  background-color: var(--principal);
+  border: 0px solid transparent;
+  cursor: pointer;
+  color: var(--oscuro);
 
+  margin: auto;
+  margin-top: 2rem;
+}
